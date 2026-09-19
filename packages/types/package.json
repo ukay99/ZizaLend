@@ -14,7 +14,7 @@
   },
   "scripts": {
     "generate": "openapi-typescript ../openapi.json -o src/generated.ts",
-    "build": "npm run generate && tsc",
+    "build": "node init && npm run generate && tsc",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
