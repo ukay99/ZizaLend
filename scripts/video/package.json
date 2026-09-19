@@ -5,8 +5,8 @@
   "description": "Reproducible pipeline that builds the ZizaLend pitch video from the live Testnet deployment",
   "type": "module",
   "scripts": {
-    "build": "node build.mjs",
-    "build:draft": "node build.mjs --draft",
+    "build": "node init && node build.mjs",
+    "build:draft": "node init && node build.mjs --draft",
     "capture": "node capture.mjs",
     "narration": "node narration.mjs",
     "render": "node render.mjs",
